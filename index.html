@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Elara Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl text-center mt-5">
+        Elara <span class="text-red-500 font-medium">Bank </span>
+      </h1>
+    </header>
+
+    <main>
+        <!-- transaction  -->
+      <section class="mt-8">
+        <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+          <div class="bg-red-400 p-8 rounded-lg">
+            <h4 class="text-3xl">Deposit</h4>
+            <h2 class="text-5xl font-medium">$<span id="deposit-total">00</span></h2>
+          </div>
+          <div class="bg-orange-300 p-8 rounded-lg">
+            <h4 class="text-3xl">Withdraw</h4>
+            <h2 class="text-5xl font-medium">$<span id="Withdraw-total">00</span></h2>
+          </div>
+          <div class="bg-amber-300 p-8 rounded-lg">
+            <h4 class="text-3xl">Balance</h4>
+            <h2 class="text-5xl font-medium">$<span id="balance-total">1000</span></h2>
+          </div>
+        </div>
+      </section>
+      <!-- deposit and Withdraw  -->
+<section class="mt-8 w-3/4 mx-auto">
+    <div class="grid grid-cols-2 gap-4">
+        <div class="bg-cyan-400 p-8 rounded-lg">
+            <h3 class="text-4xl text-white mb-4">Your Deposit</h3>
+            <input class="w-3/4 px-4 py-3 rounded block" type="text" placeholder="$ ammount you want to deposit">
+            <button id="btn-deposit" class="bg-fuchsia-950 text-white rounded-lg mt-4 px-6 py-2 font-medium hover:bg-fuchsia-600 ">Deposit</button>
+        </div>
+        <div class="bg-rose-400 p-8 rounded-lg">
+            <h3 class="text-4xl text-white mb-4">Your Withdraw</h3>
+            <input class="w-3/4 px-4 py-3 rounded block" type="text" placeholder="$ ammount you want to Withdraw">
+            <button id="btn-withdraw" class="bg-pink-600 text-white rounded-lg mt-4 px-6 py-2 font-medium hover:bg-pink-950 ">Withdraw</button>
+        </div>
+    </div>
+</section>
+
+    </main>
+  </body>
+</html>
